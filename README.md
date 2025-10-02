@@ -1,62 +1,57 @@
-# Astro Starter Kit: Blog
+# TechWithOwais - My Personal Tech Blog
 
-```sh
-npm create astro@latest -- --template blog
-```
+[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This is the source code for my personal tech blog, **TechWithOwais**. This blog is my digital space to document my journey as a computer science student—sharing projects, tutorials, and insights I gain along the way.
 
-Features:
+> **Check out the live site:** [**techwithowais.vercel.app**](https://tech-with-owais-git-main-mohd-owaiss-projects-45646036.vercel.app/)
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
 
-## 🚀 Project Structure
+![Screenshot of the TechWithOwais homepage](./screenshot.png)
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🚀 Tech Stack
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+This project was built from the ground up using modern web technologies to be fast, secure, and developer-friendly.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+-   **Framework:** [Astro](https://astro.build/) - For a super-fast, content-focused website.
+-   **Content:** Written in Markdown (`.md`) and managed with Astro's Content Collections.
+-   **Styling:** Plain CSS with variables for theming.
+-   **Deployment:** Hosted on [Vercel](https://vercel.com/) via automated Git deployment.
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## 🛠️ Running Locally
 
-All commands are run from the root of the project, from a terminal:
+Want to run this project on your own machine? Follow these steps:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/md-owais9956/TechWithOwais](https://github.com/md-owais9956/TechWithOwais)
+    ```
+    
 
-## 👀 Want to learn more?
+2.  **Navigate into the project directory:**
+    ```bash
+    cd TechWithOwais
+    ```
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Credit
+4.  **Start the local development server:**
+    ```bash
+    npm run dev
+    ```
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+The site will now be available at `http://localhost:4321`.
+
+---
+
+## Acknowledgement
+
+This project was bootstrapped using the official [Astro Blog Starter Template](https://astro.build/themes/details/blog/). A big thank you to the Astro team and its community for creating such an amazing tool.
