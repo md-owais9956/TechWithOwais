@@ -7,7 +7,7 @@ This is the source code for my personal tech blog, **TechWithOwais**. This blog 
 > **Check out the live site:** [**techwithowais.vercel.app**](https://tech-with-owais-git-main-mohd-owaiss-projects-45646036.vercel.app/)
 
 
-![Screenshot of the TechWithOwais homepage](./screenshot.png)
+![Screenshot of the TechWithOwais homepage](screenshot.png)
 
 
 ---
