@@ -4,7 +4,7 @@
 
 This is the source code for my personal tech blog, **TechWithOwais**. This blog is my digital space to document my journey as a computer science student—sharing projects, tutorials, and insights I gain along the way.
 
-> **Check out the live site:** [**techwithowais.vercel.app**](https://techwithowais.co.in/)
+> **Check out the live site:** [**techwithowais.co.in**](https://techwithowais.co.in/)
 
 
 ![Screenshot of the TechWithOwais homepage](screenshot.png)
