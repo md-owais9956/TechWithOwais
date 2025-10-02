@@ -5,15 +5,19 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
+        <a href="/" class="logo-link">
+			<img src="/logo.jpg" alt={`${SITE_TITLE} logo`} class="logo-image" />
+			<span>{SITE_TITLE}</span>
+		</a>
+        <div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
+
 		<div class="social-links">
-			<a href="https://m.webtoo.ls/@astro" target="_blank">
-				<span class="sr-only">Follow Astro on Mastodon</span>
+			<a href="https://www.linkedin.com/in/mohammad-owais-45a1a0324/" target="_blank">
+				<span class="sr-only">Connect On LinkedIn</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
 						fill="currentColor"
@@ -21,8 +25,8 @@ import HeaderLink from './HeaderLink.astro';
 					></path></svg
 				>
 			</a>
-			<a href="https://twitter.com/astrodotbuild" target="_blank">
-				<span class="sr-only">Follow Astro on Twitter</span>
+			<a href="https://x.com/MohammadOw64104" target="_blank">
+				<span class="sr-only">Follow Me on Twitter</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
 						fill="currentColor"
@@ -30,8 +34,8 @@ import HeaderLink from './HeaderLink.astro';
 					></path></svg
 				>
 			</a>
-			<a href="https://github.com/withastro/astro" target="_blank">
-				<span class="sr-only">Go to Astro's GitHub repo</span>
+			<a href="https://github.com/md-owais9956" target="_blank">
+				<span class="sr-only">Go to My GitHub repo</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
 						fill="currentColor"
@@ -43,6 +47,23 @@ import HeaderLink from './HeaderLink.astro';
 	</nav>
 </header>
 <style>
+    /* START: New Logo Styles */
+    .logo-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75em; /* Space between logo and text */
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .logo-image {
+        width: 40px; /* Adjust the size as needed */
+        height: 40px;
+    }
+    /* END: New Logo Styles */
+
 	header {
 		margin: 0;
 		padding: 0 1em;
@@ -59,6 +80,7 @@ import HeaderLink from './HeaderLink.astro';
 		text-decoration: none;
 	}
 	nav {
+		background-color: rgba(178, 134, 23, 0.766);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -74,6 +96,7 @@ import HeaderLink from './HeaderLink.astro';
 		border-bottom-color: var(--accent);
 	}
 	.social-links,
+    .internal-links,
 	.social-links a {
 		display: flex;
 	}
