@@ -1,0 +1,110 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`Legal - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="legal-content">
+        <h1>Legal Information</h1>
+        <p class="intro">
+          This page contains the Disclaimer, Privacy Policy, and Terms & Conditions for 
+          <strong>Tech With Owais</strong> (techwithowais.co.in).
+        </p>
+
+        <!-- Disclaimer Section -->
+        <h2>Disclaimer</h2>
+        <p>
+          The content on this website is provided for general informational and educational 
+          purposes only. While we strive to provide accurate and up-to-date information, 
+          we make no warranties about completeness, reliability, or accuracy. 
+        </p>
+        <p>
+          Some links on this site may be affiliate links. This means that if you purchase 
+          through these links, we may earn a commission at no extra cost to you. We only 
+          recommend products or services that we believe are genuinely useful.
+        </p>
+        <p>
+          By using this website, you consent to this disclaimer and agree to its terms.
+        </p>
+
+        <!-- Privacy Policy Section -->
+        <h2>Privacy Policy</h2>
+        <p>
+          Your privacy is important to us. We may collect basic information such as your 
+          name and email if you subscribe to our newsletter, as well as non-personal 
+          information (like browser type, IP address, and cookies) for analytics purposes.
+        </p>
+        <p>
+          We use this information to improve content, provide updates, and maintain website 
+          functionality. Third-party services (like Google Analytics, AdSense, or affiliate 
+          programs) may also collect data according to their own policies.
+        </p>
+        <p>
+          By using this website, you consent to our Privacy Policy.
+        </p>
+
+        <!-- Terms and Conditions Section -->
+        <h2>Terms & Conditions</h2>
+        <p>
+          By accessing and using this website, you agree to comply with the following terms:
+        </p>
+        <ul>
+          <li>Content is for educational and informational purposes only.</li>
+          <li>You may not copy or republish content without permission.</li>
+          <li>You agree not to use this website for unlawful purposes.</li>
+          <li>Affiliate and sponsored content may appear on this website.</li>
+        </ul>
+        <p>
+          We reserve the right to update these terms at any time without prior notice. 
+          Continued use of the site means you accept any changes.
+        </p>
+
+        <!-- Copyright Section -->
+        <h2>Copyright Notice</h2>
+        <p>
+          © {new Date().getFullYear()} Tech With Owais. All Rights Reserved.  
+          No part of this website may be reproduced, distributed, or transmitted in any form 
+          without prior written permission, except for personal and non-commercial use.
+        </p>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .legal-content {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  h1, h2 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+  }
+</style>
