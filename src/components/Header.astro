@@ -4,122 +4,141 @@ import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
-	<nav>
-		<a href="/" class="logo-link">
-			<img src="/logo.jpg" alt={`${SITE_TITLE} logo`} class="logo-image" />
-			<span>{SITE_TITLE}</span>
-		</a>
+  <nav>
+    <!-- Logo -->
+    <a href="/" class="logo-link">
+      <img src="/logo.jpg" alt={`${SITE_TITLE} logo`} class="logo-image" />
+      <span>{SITE_TITLE}</span>
+    </a>
 
-		<!-- Hamburger Button -->
-		<button class="menu-btn" onclick="document.querySelector('.internal-links').classList.toggle('open')">
-			☰
-		</button>
+    <!-- Hamburger Button -->
+    <button class="menu-btn" id="menu-btn">☰</button>
 
-		<!-- Internal Links -->
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-			<HeaderLink href="/legal">Policies & Disclaimer</HeaderLink>
-		</div>
+    <!-- Internal Links -->
+    <div class="internal-links" id="menu">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/legal">Policies & Disclaimer</HeaderLink>
+    </div>
 
-		<!-- Social Links -->
-		<div class="social-links">
-			<a href="https://www.linkedin.com/in/mohammad-owais-45a1a0324/" target="_blank">
-				<span class="sr-only">Connect On LinkedIn</span>
-				<!-- linkedin svg -->
-			</a>
-			<a href="https://x.com/MohammadOw64104" target="_blank">
-				<span class="sr-only">Follow Me on Twitter</span>
-				<!-- twitter svg -->
-			</a>
-			<a href="https://github.com/md-owais9956" target="_blank">
-				<span class="sr-only">Go to My GitHub repo</span>
-				<!-- github svg -->
-			</a>
-		</div>
-	</nav>
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mohammad-owais-45a1a0324/" target="_blank">LinkedIn</a>
+      <a href="https://x.com/MohammadOw64104" target="_blank">Twitter</a>
+      <a href="https://github.com/md-owais9956" target="_blank">GitHub</a>
+    </div>
+  </nav>
 </header>
 
 <style>
-	/* Logo Styles */
-	.logo-link {
-		display: flex;
-		align-items: center;
-		gap: 0.75em;
-		text-decoration: none;
-		color: inherit;
-		font-size: 1.1em;
-		font-weight: bold;
-	}
-	.logo-image {
-		width: 40px;
-		height: 40px;
-	}
+  /* Logo */
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
 
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
+  /* Header & Nav */
+  header {
+    margin: 0;
+    padding: 0 1em;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  nav {
+    background-color: rgba(178, 134, 23, 0.766);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    text-decoration: none;
+  }
+  nav a.active {
+    border-bottom: 2px solid var(--accent);
+  }
 
-	nav {
-		background-color: rgba(178, 134, 23, 0.766);
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		position: relative;
-	}
+  /* Links */
+  .social-links,
+  .internal-links,
+  .social-links a {
+    display: flex;
+    gap: 1rem;
+  }
 
-	/* Links */
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		text-decoration: none;
-	}
-	nav a.active {
-		border-bottom: 2px solid var(--accent);
-	}
+  /* Hamburger button */
+  .menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+  }
 
-	.social-links,
-	.internal-links,
-	.social-links a {
-		display: flex;
-		gap: 1rem;
-	}
-
-	/* Hamburger button */
-	.menu-btn {
-		display: none;
-		font-size: 1.5rem;
-		background: none;
-		border: none;
-		cursor: pointer;
-		color: #000;
-	}
-
-	/* Mobile Styles */
-	@media (max-width: 720px) {
-		.menu-btn {
-			display: block;
-		}
-		.social-links {
-			display: none;
-		}
-		.internal-links {
-			display: none;
-			flex-direction: column;
-			position: absolute;
-			top: 60px;
-			right: 10px;
-			background: #fff;
-			padding: 1rem;
-			border-radius: 8px;
-			box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-		}
-		.internal-links.open {
-			display: flex;
-		}
-	}
+  /* Mobile Styles */
+  @media (max-width: 720px) {
+    .menu-btn {
+      display: block;
+    }
+    .social-links {
+      display: none;
+    }
+    .internal-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    .internal-links.open {
+      display: flex;
+    }
+  }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    if (menuBtn && menu) {
+      // Toggle menu on button click
+      menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menu.classList.toggle("open");
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        const target = e.target;
+        if (
+          menu.classList.contains("open") &&
+          target instanceof Node && // ensure it's a valid DOM node
+          !menu.contains(target) &&
+          target !== menuBtn
+        ) {
+          menu.classList.remove("open");
+        }
+      });
+    }
+  });
+</script>
