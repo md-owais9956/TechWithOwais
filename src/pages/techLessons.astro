@@ -1,0 +1,102 @@
+<!-- ---
+import { getCollection } from 'astro:content';
+const learnPosts = await getCollection('techLessons');
+
+// Filter by category
+const webDevLessons = learnPosts.filter((p) => p.data.category === 'techLessons');
+// const dsaLessons = learnPosts.filter((p) => p.data.category === 'DSA');
+---
+
+<section class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-4xl font-bold mb-6 text-center">📘 Learn with Owais</h1>
+  <p class="text-lg text-gray-600 text-center mb-12">
+    Step-by-step tutorials on <strong>Web Development</strong>, <strong>DSA</strong>, and more — all written in an easy, practical way.
+  </p>
+
+  Web Dev Section
+  <h2 class="text-2xl font-semibold mb-4 text-blue-700">🌐 Web Development</h2>
+  <ul class="space-y-3 mb-10">
+    {webDevLessons.map((lesson) => (
+      <li class="border-b border-gray-200 pb-3">
+        <a href={`/techLessons/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
+          {lesson.data.title}
+        </a>
+        <p class="text-gray-500 text-sm">{lesson.data.description}</p>
+      </li>
+    ))}
+  </ul>
+
+  <!-- DSA Section -->
+  <!-- {dsaLessons.length > 0 && (
+    <>
+      <h2 class="text-2xl font-semibold mb-4 text-green-700">🧮 Data Structures & Algorithms</h2>
+      <ul class="space-y-3">
+        {dsaLessons.map((lesson) => (
+          <li class="border-b border-gray-200 pb-3">
+            <a href={`/learn/${lesson.slug}/`} class="text-lg text-green-600 hover:underline">
+              {lesson.data.title}
+            </a>
+            <p class="text-gray-500 text-sm">{lesson.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+</section> --> -->
+
+
+---
+// src/pages/techLessons.astro
+
+// 1. Import your layout components
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// 2. Your existing logic to get collections
+import { getCollection } from 'astro:content';
+const learnPosts = await getCollection('techLessons');
+
+// 3. Filter for just web dev
+const webDevLessons = learnPosts.filter((p) => p.data.category === 'webdev');
+---
+
+<html lang="en">
+<head>
+  <BaseHead title="Tech Lessons" description="Learn Web Development with Owais." />
+</head>
+<body>
+  <Header />
+
+  <main>
+    <section class="max-w-4xl mx-auto px-4 py-8">
+      <h1 class="text-4xl font-bold mb-6 text-center"> Tech with Owais</h1>
+      <p class="text-lg text-gray-600 text-center mb-12">
+        Step-by-step tutorials on <strong>Web Development</strong> – all written in an easy, practical way.
+      </p>
+
+      <div>
+  <h2 class="text-2xl font-semibold mb-4 text-blue-700"> Web Development</h2>
+  <ul class="space-y-3 mb-10">
+    
+    {webDevLessons.map((lesson) => (
+      <li class="border-b border-gray-200 pb-3">
+        <a href={`/techLessons/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
+          {lesson.data.title}
+        </a>
+        
+        <p class="text-gray-500 text-sm">
+          {lesson.data.description}
+        </p>
+      </li>
+    ))}
+
+  </ul>
+</div>
+
+      </section>
+  </main>
+
+  <Footer />
+</body>
+</html>

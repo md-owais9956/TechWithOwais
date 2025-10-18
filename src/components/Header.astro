@@ -18,6 +18,7 @@ import HeaderLink from './HeaderLink.astro';
     <div class="internal-links" id="menu">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/techLessons">Tech Lessons</HeaderLink> 
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/legal">Policies & Disclaimer</HeaderLink>
     </div>
@@ -132,7 +133,7 @@ import HeaderLink from './HeaderLink.astro';
         const target = e.target;
         if (
           menu.classList.contains("open") &&
-          target instanceof Node && // ensure it's a valid DOM node
+          target instanceof Node &&
           !menu.contains(target) &&
           target !== menuBtn
         ) {
