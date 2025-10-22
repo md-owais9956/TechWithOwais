@@ -3,11 +3,15 @@ layout: ../../../layouts/TechLessonLayout.astro
 title: "HTML and CSS : INTERMEDIATE LEVEL"
 description: "Go Beyond Basics : INTERMEDIATE"
 pubDate: "2025-10-22"
-category: "HTML & CSS"
-level: "INTERMEDIATE"
+category: "webdev"
+level: "Intermediate"
 # heroImage: "/images/my-image.png"  #(this is optional)
 updatedDate: "2025-10-22"           #(this is optional)
 ---
+
+
+
+
 
 
 
@@ -45,7 +49,7 @@ The `<head>` is not just a box for the `<title>`. It's the "engine room" that te
 
 #### Conceptual Explanations:
 
-  * **`meta charset="UTF-8"`**: This command tells the browser which "alphabet" to use. `UTF-8` is the universal standard that includes letters, numbers, symbols, and emojis (😊). Without it, special characters might break.
+  * **`meta charset="UTF-8"`**: This command tells the browser which "alphabet" to use. `UTF-8` is the universal standard that includes letters, numbers, symbols, and emojis. Without it, special characters might break.
   * **`meta name="viewport"`**: This is **the most important tag for mobile**. It tells the phone's browser, "Stop pretending to be a 980px desktop. Set your width to your *actual* screen size (e.g., 390px) and don't zoom out." This is what *enables* responsive design.
   * **`meta name="description"`**: This is purely for **SEO (Search Engine Optimization)**. It's the blurb Google shows in its search results.
   * **`og:title` & `og:image`**: "OG" stands for **Open Graph**. These tags are for **social media**. When someone shares your link on Facebook, X, or Slack, it reads these tags to create that rich preview card.
