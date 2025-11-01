@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/TechLessonLayout.astro
-title: "Unit 2: Java Script and JQuery "
+title: "Unit 3: Java Script and JQuery "
 description: "Make your Webpages/Websites functional."
 pubDate: "2025-11-01"
 category: "webdev"
