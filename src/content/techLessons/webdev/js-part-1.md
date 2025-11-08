@@ -127,7 +127,7 @@ Your "boxes" can hold different types of data:
   * **String:** Text, always in quotes.
     `const greeting = "Hello, world!";`
   * **Number:** Any number, with or without decimals.
-    `const age = 21;`
+    `const age = 20;`
     `const pi = 3.14;`
   * **Boolean:** A simple `true` or `false` value.
     `const isLearning = true;`
@@ -234,7 +234,7 @@ An Object is a collection of related properties. Think of it as a "profile card"
 const user = {
   firstName: "Mohd",
   lastName: "Owais",
-  age: 21,
+  age: 20,
   isStudent: true
 };
 ```
@@ -243,7 +243,7 @@ To get data from an object, you use **dot notation**.
 
 ```javascript
 console.log(user.firstName); // Prints: Mohd
-console.log(user.age);       // Prints: 21
+console.log(user.age);       // Prints: 20
 
 // You can also add new properties
 user.email = "owais@example.com";
