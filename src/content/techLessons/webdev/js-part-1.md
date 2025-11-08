@@ -2,11 +2,11 @@
 layout: ../../../layouts/TechLessonLayout.astro
 title: "JAVASCRIPT: FROM ZERO TO HERO"
 description: "Part 1: JavaScript Fundamentals (The Foundation)"
-pubDate: "2025-10-22"
+pubDate: "2025-11-09"
 category: "webdev"
 level: "basics"
 # heroImage: "/images/my-image.png"  #(this is optional)
-updatedDate: "2025-11-9"           #(this is optional)
+updatedDate: "2025-11-09"           #(this is optional)
 ---
 
 
