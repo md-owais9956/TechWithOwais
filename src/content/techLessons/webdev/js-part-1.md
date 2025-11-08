@@ -184,7 +184,7 @@ function greet(name) {
 
 // 2. CALLING the function (using the recipe)
 greet("Mohd");   // Prints: Hello, Mohd! Welcome.
-greet("Aisha"); // Prints: Hello, Aisha! Welcome.
+greet("Khabib"); // Prints: Hello, Khabib! Welcome.
 ```
 
 Functions can also **return** a value (an output):
