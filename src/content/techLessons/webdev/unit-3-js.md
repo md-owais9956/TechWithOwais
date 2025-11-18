@@ -9,10 +9,8 @@ level: "Beginner"
 updatedDate: "2025-11-01"           #(this is optional)
 ---
 
-````markdown
-# Unit 3: A Detailed Guide to JavaScript & jQuery
 
-Here is a structured explanation of the topics for your Internet and Web Programming unit.
+
 
 ## 1. JavaScript Basics: Functions
 

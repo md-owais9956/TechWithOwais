@@ -239,7 +239,6 @@ The Web is built on a **Client-Server Model**.
 
 
 
-[Image of Client-Server Model diagram]
 
 
 ---
