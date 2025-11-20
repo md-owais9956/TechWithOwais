@@ -5,8 +5,8 @@ description: "HTML CSS The Conclusion"
 pubDate: "2025-10-27"
 category: "webdev"
 level: "advanced"
-# heroImage: "/images/my-image.png"  #(this is optional)
-updatedDate: "2025-10-27"           #(this is optional)
+# heroImage: "/images/my-image.png"  
+updatedDate: "2025-10-27"         
 ---
 
 
