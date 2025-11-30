@@ -5,8 +5,8 @@ description: "Go Beyond Basics : INTERMEDIATE"
 pubDate: "2025-10-22"
 category: "webdev"
 level: "Intermediate"
-# heroImage: "/images/my-image.png"  #(this is optional)
-updatedDate: "2025-10-22"           #(this is optional)
+# heroImage: "/images/my-image.png"  
+updatedDate: "2025-10-22"           
 ---
 
 

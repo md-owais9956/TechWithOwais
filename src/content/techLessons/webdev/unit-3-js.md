@@ -5,8 +5,8 @@ description: "Make your Webpages/Websites functional."
 pubDate: "2025-11-01"
 category: "webdev"
 level: "Beginner"
-# heroImage: "/images/my-image.png"  #(this is optional)
-updatedDate: "2025-11-01"           #(this is optional)
+# heroImage: "/images/my-image.png" 
+updatedDate: "2025-11-01"           
 ---
 
 

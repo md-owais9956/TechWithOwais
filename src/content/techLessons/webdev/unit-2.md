@@ -5,8 +5,8 @@ description: "How to Build a Web Page for Your Cat"
 pubDate: "2025-10-21"
 category: "webdev"
 level: "Beginner"
-# heroImage: "/images/my-image.png"  #(this is optional)
-updatedDate: "2025-10-21"           #(this is optional)
+# heroImage: "/images/my-image.png"  
+updatedDate: "2025-10-21"           
 ---
 
 

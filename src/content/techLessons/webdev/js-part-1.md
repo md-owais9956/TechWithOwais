@@ -5,8 +5,8 @@ description: "Part 1: JavaScript Fundamentals (The Foundation)"
 pubDate: "2025-11-09"
 category: "webdev"
 level: "basics"
-# heroImage: "/images/my-image.png"  #(this is optional)
-updatedDate: "2025-11-09"           #(this is optional)
+# heroImage: "/images/my-image.png"  
+updatedDate: "2025-11-09"          
 ---
 
 
