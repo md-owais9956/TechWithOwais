@@ -123,7 +123,7 @@ getBitcoinPrice();
 
 -----
 
-### 🏁 Conclusion: You Are A Developer
+###  Conclusion: You Are A Developer
 
 Congratulations\! You have journeyed through:
 
