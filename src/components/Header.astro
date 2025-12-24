@@ -1,146 +1,76 @@
 ---
-import { SITE_TITLE } from '../consts';
-import HeaderLink from './HeaderLink.astro';
+const navLinks = [
+  { href: "/blog", label: "Blog" },
+  { href: "/learning-paths", label: "Learning Paths" },
+  { href: "/about", label: "About" },
+  { href: "https://github.com/md-owais9956", label: "GitHub", external: true },
+  { href: "https://x.com/MohammadOw64104", label: "Twitter(X)", external: true },
+  { href: "https://www.linkedin.com/in/mohammad-owais-45a1a0324/", label: "LinkedIn", external: true },
+];
 ---
 
 <header>
- 
-  <nav>
-    <!-- Logo -->
-    <a href="/" class="logo-link">
-      <img src="/logo.jpg" alt={`${SITE_TITLE} logo`} class="logo-image" />
-      <span>{SITE_TITLE}</span>
-    </a>
+  <nav class="nav">
+    <a href="/" class="logo">Tech With Owais</a>
 
-    <!-- Hamburger Button -->
-    <button class="menu-btn" id="menu-btn">☰</button>
-
-    <!-- Internal Links -->
-    <div class="internal-links" id="menu">
-      <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
-      <HeaderLink href="/techLessons">Tech Lessons</HeaderLink> 
-      <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/legal">Policies & Disclaimer</HeaderLink>
+    <!-- Desktop links -->
+    <div class="nav-links">
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          target={link.external ? "_blank" : undefined}
+          rel={link.external ? "noopener" : undefined}
+        >
+          {link.label}
+        </a>
+      ))}
     </div>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/mohammad-owais-45a1a0324/" target="_blank">LinkedIn</a>
-      <a href="https://x.com/MohammadOw64104" target="_blank">Twitter</a>
-      <a href="https://github.com/md-owais9956" target="_blank">GitHub</a>
-    </div>
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Toggle menu">
+      ☰
+    </button>
   </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    {navLinks.map(link => (
+      <a
+        href={link.href}
+        target={link.external ? "_blank" : undefined}
+        rel={link.external ? "noopener" : undefined}
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
 </header>
 
-<style>
-  /* Logo */
-  .logo-link {
-    display: flex;
-    align-items: center;
-    gap: 0.75em;
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.1em;
-    font-weight: bold;
-  }
-  .logo-image {
-    width: 40px;
-    height: 40px;
-  }
-
-  /* Header & Nav */
-  header {
-    margin: 0;
-    padding: 0 1em;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  nav {
-    background-color: rgba(178, 134, 23, 0.766);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-  nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
-    text-decoration: none;
-  }
-  nav a.active {
-    border-bottom: 2px solid var(--accent);
-  }
-
-  /* Links */
-  .social-links,
-  .internal-links,
-  .social-links a {
-    display: flex;
-    gap: 1rem;
-  }
-
-  /* Hamburger button */
-  .menu-btn {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #000;
-  }
-
-  /* Mobile Styles */
-  @media (max-width: 720px) {
-    .menu-btn {
-      display: block;
-    }
-    .social-links {
-      display: none;
-    }
-    .internal-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 10px;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      z-index: 1000;
-      transition: all 0.3s ease;
-    }
-    .internal-links.open {
-      display: flex;
-    }
-  }
-</style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
+  const button = document.querySelector(".hamburger");
+  const menu = document.querySelector(".mobile-menu");
 
-    if (menuBtn && menu) {
-      // Toggle menu on button click
-      menuBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        menu.classList.toggle("open");
-      });
+  function closeMenu() {
+    menu?.classList.remove("open");
+  }
 
-      // Close menu when clicking outside
-      document.addEventListener("click", (e) => {
-        const target = e.target;
-        if (
-          menu.classList.contains("open") &&
-          target instanceof Node &&
-          !menu.contains(target) &&
-          target !== menuBtn
-        ) {
-          menu.classList.remove("open");
-        }
-      });
+  // Toggle menu on hamburger click
+  button?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu?.classList.toggle("open");
+  });
+
+  // Close when clicking anywhere outside
+  document.addEventListener("click", (e) => {
+    if (!(e.target instanceof Node)) return;
+    if (!menu?.contains(e.target)) {
+      closeMenu();
     }
+  });
+
+  // Close when clicking a link inside the menu
+  menu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
   });
 </script>

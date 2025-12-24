@@ -1,0 +1,151 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="HTML & CSS — Learning Notes"
+      description="My learning notes while understanding how the web is structured and styled using HTML and CSS."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <article>
+        <h1>HTML & CSS</h1>
+
+        <p class="status in-progress">
+          Status: In progress
+        </p>
+
+        <p class="note-disclaimer">
+          These are my personal learning notes. They reflect how I currently
+          understand HTML and CSS and may evolve as I build more projects.
+        </p>
+
+        <!-- WHY -->
+        <section>
+          <h2>Why I’m learning HTML & CSS</h2>
+          <p>
+            Everything on the web starts here. Before JavaScript or frameworks,
+            I needed to understand how browsers interpret structure and layout.
+            Without this clarity, higher-level tools feel like magic.
+          </p>
+        </section>
+
+        <!-- HTML -->
+        <section>
+          <h2>How HTML started making sense</h2>
+          <ul>
+            <li>HTML is about meaning, not appearance</li>
+            <li>The browser builds a DOM tree from HTML</li>
+            <li>Semantic tags communicate intent, not style</li>
+            <li><code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code> matter more than <code>div</code></li>
+            <li>Good HTML works even without CSS</li>
+          </ul>
+        </section>
+
+        <!-- STRUCTURE -->
+        <section>
+          <h2>Structure concepts that clicked</h2>
+          <ul>
+            <li>Block vs inline elements explain most layout confusion</li>
+            <li>Forms already provide validation and accessibility</li>
+            <li>Labels are not optional — they are structural</li>
+            <li>HTML defines roles, CSS defines appearance</li>
+          </ul>
+        </section>
+
+        <!-- CSS -->
+        <section>
+          <h2>How I started understanding CSS</h2>
+          <ul>
+            <li>CSS is a rule system, not design creativity</li>
+            <li>The cascade is deterministic, not random</li>
+            <li>Specificity decides which rule wins</li>
+            <li>Source order matters more than expected</li>
+          </ul>
+        </section>
+
+        <!-- BOX MODEL -->
+        <section>
+          <h2>The box model mental shift</h2>
+          <ul>
+            <li>Every element is a rectangle</li>
+            <li>Padding, border, and margin define relationships</li>
+            <li><code>box-sizing: border-box</code> made layouts predictable</li>
+            <li>Spacing is structural, not decorative</li>
+          </ul>
+        </section>
+
+        <!-- LAYOUT -->
+        <section>
+          <h2>Layout systems that actually work</h2>
+          <ul>
+            <li>Flexbox is best for alignment, not full layouts</li>
+            <li>Grid is meant for page and component structure</li>
+            <li>Responsive design is about space, not devices</li>
+            <li><code>minmax</code> and <code>fr</code> units simplify responsiveness</li>
+          </ul>
+        </section>
+
+        <!-- POSITION -->
+        <section>
+          <h2>Positioning without confusion</h2>
+          <ul>
+            <li><code>relative</code> creates a reference frame</li>
+            <li><code>absolute</code> exits normal flow</li>
+            <li><code>fixed</code> ignores scrolling</li>
+            <li><code>sticky</code> reacts to scroll boundaries</li>
+          </ul>
+        </section>
+
+        <!-- SYSTEMS -->
+        <section>
+          <h2>Styling as a system</h2>
+          <ul>
+            <li>CSS variables reduce repetition</li>
+            <li>Design consistency beats visual cleverness</li>
+            <li>Transitions enhance feedback, not layout</li>
+            <li>Polish only works on solid structure</li>
+          </ul>
+        </section>
+
+        <!-- CONFUSIONS -->
+        <section>
+          <h2>Things that still feel unclear</h2>
+          <ul>
+            <li>Advanced grid edge cases</li>
+            <li>Complex stacking contexts</li>
+            <li>Balancing utility vs custom CSS</li>
+          </ul>
+        </section>
+
+        <!-- NEXT -->
+        <section>
+          <h2>What I’ll focus on next</h2>
+          <ul>
+            <li>Building layouts without frameworks</li>
+            <li>Component-based CSS thinking</li>
+            <li>Better accessibility habits</li>
+          </ul>
+        </section>
+
+        <!-- NAV -->
+        <nav class="note-nav">
+          <a href="/learning-paths/notes/web-systems">← Web Systems</a>
+          <a href="/learning-paths/notes/javascript">JavaScript →</a>
+        </nav>
+
+      </article>
+    </main>
+
+    <Footer />
+  </body>
+</html>

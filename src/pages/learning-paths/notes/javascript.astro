@@ -1,0 +1,166 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="JavaScript — Learning Notes"
+      description="My consolidated learning notes while understanding JavaScript from fundamentals to advanced concepts."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <article>
+        <h1>JavaScript</h1>
+
+        <p class="status in-progress">
+          Status: In progress
+        </p>
+        <p class="note-disclaimer">
+            These are my personal learning notes. They reflect how I currently
+            understand Git and GitHub and may evolve as I use them more.
+        </p>        
+
+        <!-- WHY -->
+        <section>
+          <h2>Why I’m learning JavaScript</h2>
+          <p>
+            JavaScript sits at the center of everything I want to build on the web.
+            I didn’t want shallow knowledge, so I decided to understand it
+            layer by layer — not just syntax, but how it actually works.
+          </p>
+        </section>
+
+        <!-- FUNDAMENTALS -->
+        <section>
+          <h2>Foundations that clicked</h2>
+          <ul>
+            <li>Difference between <code>const</code>, <code>let</code>, and why <code>var</code> is avoided</li>
+            <li>Primitive data types and how JavaScript treats values</li>
+            <li>Writing small functions instead of repeating logic</li>
+            <li>Using arrays and objects as the basic containers of data</li>
+            <li>Loops as tools, not default solutions</li>
+          </ul>
+        </section>
+
+        <!-- DOM -->
+        <section>
+          <h2>Understanding the DOM (browser interaction)</h2>
+          <p>
+            The DOM finally made sense when I stopped seeing it as “magic”
+            and started seeing it as a tree built from HTML.
+          </p>
+          <ul>
+            <li><code>querySelector</code> as the main way to grab elements</li>
+            <li>Changing text with <code>textContent</code></li>
+            <li>Using <code>classList</code> instead of inline styles</li>
+            <li>Handling user actions with <code>addEventListener</code></li>
+            <li>Creating and removing elements dynamically</li>
+          </ul>
+        </section>
+
+        <!-- MINI PROJECT -->
+        <section>
+          <h2>Mini project that helped</h2>
+          <p>
+            Building a simple To-Do List clarified many concepts:
+          </p>
+          <ul>
+            <li>Event delegation</li>
+            <li>DOM updates based on state</li>
+            <li>Why structure matters more than clever code</li>
+          </ul>
+        </section>
+
+        <!-- ES6 -->
+        <section>
+          <h2>Modern JavaScript (ES6+)</h2>
+          <ul>
+            <li>Arrow functions for cleaner function syntax</li>
+            <li>Template literals instead of string concatenation</li>
+            <li>Destructuring objects and arrays</li>
+            <li>Spread vs rest operators</li>
+            <li>Using <code>map</code>, <code>filter</code>, and <code>reduce</code> instead of manual loops</li>
+          </ul>
+        </section>
+
+        <!-- ASYNC -->
+        <section>
+          <h2>Asynchronous JavaScript (big mental shift)</h2>
+          <p>
+            This was the hardest part conceptually.
+            Understanding that JavaScript is single-threaded but non-blocking
+            changed how I reason about code.
+          </p>
+          <ul>
+            <li>Event loop: stack, queue, and Web APIs</li>
+            <li>Why callbacks become unreadable</li>
+            <li>Promises as a cleaner abstraction</li>
+            <li>Async / await as the readable standard</li>
+            <li>Using <code>fetch</code> and handling errors properly</li>
+          </ul>
+        </section>
+
+        <!-- UNDER THE HOOD -->
+        <section>
+          <h2>Under the hood concepts</h2>
+          <ul>
+            <li>Scope (global, function, block)</li>
+            <li>Closures as functions carrying their environment</li>
+            <li>How <code>this</code> changes with context</li>
+            <li>Why arrow functions behave differently</li>
+            <li>Prototypes and how methods actually exist</li>
+            <li>Classes as a cleaner syntax over prototypes</li>
+          </ul>
+        </section>
+
+        <!-- ECOSYSTEM -->
+        <section>
+          <h2>The JavaScript ecosystem</h2>
+          <ul>
+            <li>Node.js to run JavaScript outside the browser</li>
+            <li>npm as the package manager</li>
+            <li>Why frameworks exist (React, Vue, Angular)</li>
+            <li>Why Git is non-negotiable</li>
+          </ul>
+        </section>
+
+        <!-- CONFUSIONS -->
+        <section>
+          <h2>Things that still confuse me</h2>
+          <ul>
+            <li>Deep async edge cases</li>
+            <li>Advanced prototype chains</li>
+            <li>Performance implications of different patterns</li>
+          </ul>
+        </section>
+
+        <!-- NEXT -->
+        <section>
+          <h2>What I’ll focus on next</h2>
+          <ul>
+            <li>Building more projects with vanilla JS</li>
+            <li>React fundamentals</li>
+            <li>Using APIs in real apps</li>
+          </ul>
+        </section>
+
+        <!-- NAV -->
+        <nav class="note-nav">
+          <a href="/learning-paths/notes/html-css">← HTML-CSS</a>
+          <a href="/learning-paths/notes/git-github">Git & GitHub →</a>
+        </nav>
+
+      </article>
+    </main>
+
+    <Footer />
+  </body>
+</html>

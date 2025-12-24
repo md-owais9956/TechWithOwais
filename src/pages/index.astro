@@ -18,46 +18,56 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
             <div class="hero">
                 <h1>Developer in Progress.</h1>
-                <p>Documenting my journey through code, projects, and college life. This is my digital workbench, where I share what I'm learning as a tech student in India.</p>
-                <a href="/blog/" class="button">Explore Blog Posts</a>
+                <p>I’m documenting what I learn through code, projects, and college life.
+                  This site is my digital workbench — a place to think clearly and track progress.</p>
+
+                
+
+                <a href="/blog" class="btn">Read my blog</a>
+
+
 
             </div>
             <div class = "hero">
-              <a href="/techLessons/" class="button">Explore Tech Lessons</a>
+              <a href="/learning-paths" class="btn">What I’m learning</a>
 
             </div>
             
 
             <div class="intro">
-                <h2>Hi, I'm Owais. Welcome!</h2>
-                <p>This blog is for the curious minds, the late-night coders, and the lifelong learners. Whether you're another student navigating the world of computer science, a hobbyist programmer looking for project ideas, or just someone interested in tech, you'll find something here.</p>
+                <h2>Hi, I'm Owais.</h2>
+                  <p>This website is mainly for myself.
+                    Writing helps me clarify what I understand, notice what I don’t,
+                    and stay consistent. If something here helps someone else,
+                    that’s a bonus.
+                    </p>    
             </div>
 
             <div class="features">
-                <h3>What You'll Find Inside</h3>
+                <h3>What I’m documenting here</h3>
                 <div class="grid">
                 <div class="card">
-                    <h4>Project Deep Dives</h4>
-                    <p>From the first line of code to the final deployment, I break down my personal projects. See the successes, the bugs, and the lessons learned.</p>
+                    <h4>Projects & Experiments</h4>
+                    <p>Notes from building things — what worked, what broke, and what I learned along the way.</p>
                 </div>
                 <div class="card">
                     <h4>Learning in Public</h4>
-                    <p>Follow along as I tackle new technologies, programming concepts, and developer tools. We'll learn and grow together.</p>
+                    <p>Concepts I’m currently trying to understand, written down to clarify my own thinking.</p>
                 </div>
                 <div class="card">
-                    <h4>Student Life & Career</h4>
-                    <p>Get a real look at life as a tech student—from surviving exams to preparing for internships and building a portfolio.</p>
+                    <h4>College & Growth</h4>
+                    <p>Reflections on studying computer science, managing time, and staying consistent.</p>
                 </div>
                 </div>
             </div>
 
             <div class="cta">
-                <p>Ready to dive in? My latest thoughts and projects are just a click away.</p>
-                <a href="/blog/" class="button">See My Latest Blog Posts</a>
+                <p>My latest thoughts and projects are just a click away.</p>
+                <a href="/blog/" class="btn secondary">Read recent posts</a>
             </div>
 
             <div class = "hero">
-              <a href="/techLessons/" class="button">See My Latest Tech content.</a>
+              <a href="/learning-paths/" class="btn secondary">See what I’m learning now</a>
 
             </div>
 		</main>
@@ -99,7 +109,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		font-weight: bold;
 		transition: all 0.2s ease-in-out; /* <-- Add this line */
 	}
-
+  .btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.btn.secondary:hover {
+  background-color: var(--accent);
+  color: white;
+  border: 1px solid var(--accent);
+}
 	/* 2. Add this new :hover style below it */
 	.button:hover {
 		background-color: rgb(178, 134, 23); /* <-- Made the color solid */
