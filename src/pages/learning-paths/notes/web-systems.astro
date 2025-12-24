@@ -1,0 +1,238 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Web Systems — Learning Notes"
+      description="My understanding of how the web works: internet, browsers, servers, and protocols."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <article>
+        <h1>Web Systems</h1>
+
+        <p class="status comfortable">
+          Status: Comfortable
+        </p>
+
+        <p class="note-disclaimer">
+          These are my personal notes while understanding how the web works.
+          They reflect my current mental model and may evolve over time.
+        </p>
+
+        <!-- WHY -->
+        <section>
+          <h2>Why I wanted to understand this</h2>
+          <p>
+            I didn’t want to treat the web as “magic”.
+            Before writing frameworks or backend code, I wanted a clear picture
+            of what actually happens when I type a URL and press Enter.
+          </p>
+        </section>
+
+        <!-- INTERNET VS WEB -->
+        <section>
+          <h2>Internet vs World Wide Web (the distinction that mattered)</h2>
+          <p>
+            The biggest early confusion was thinking the Internet and the Web
+            were the same thing. They’re not.
+          </p>
+          <ul>
+            <li>
+              <strong>The Internet</strong> is the physical and logical network —
+              cables, routers, Wi-Fi, satellites, and IP addressing.
+            </li>
+            <li>
+              <strong>The World Wide Web</strong> is an information system that
+              runs on top of the Internet — websites, pages, images, and links.
+            </li>
+          </ul>
+          <p>
+            A useful analogy for me was:
+            roads = Internet, buildings = websites.
+          </p>
+        </section>
+
+        <!-- TCP/IP -->
+        <section>
+          <h2>How data actually moves (TCP/IP)</h2>
+          <p>
+            At a lower level, the Internet’s only job is to move data reliably.
+          </p>
+          <ul>
+            <li>
+              <strong>IP</strong> handles addressing and routing packets
+              to the correct destination.
+            </li>
+            <li>
+              <strong>TCP</strong> ensures reliability — splitting data into packets,
+              reordering them, and re-sending lost ones.
+            </li>
+          </ul>
+          <p>
+            The network doesn’t care if the data is HTML, video, or JSON —
+            it just moves bytes.
+          </p>
+        </section>
+
+        <!-- CLIENT SERVER -->
+        <section>
+          <h2>Client–server model</h2>
+          <p>
+            The web works on a simple client–server conversation:
+          </p>
+          <ul>
+            <li>
+              The <strong>browser (client)</strong> makes a request.
+            </li>
+            <li>
+              The <strong>server</strong> receives it, processes it,
+              and sends back a response.
+            </li>
+            <li>
+              The browser renders the response into a page.
+            </li>
+          </ul>
+          <p>
+            This request–response cycle is the heartbeat of the web.
+          </p>
+        </section>
+
+        <!-- HTTP -->
+        <section>
+          <h2>HTTP and HTTPS (rules of communication)</h2>
+          <p>
+            Communication only works because both sides agree on rules.
+            On the web, those rules are defined by HTTP.
+          </p>
+          <ul>
+            <li>
+              HTTP is stateless — each request is independent.
+            </li>
+            <li>
+              HTTPS adds encryption and server authentication using TLS.
+            </li>
+            <li>
+              Without HTTPS, sensitive data can be intercepted.
+            </li>
+          </ul>
+        </section>
+
+        <!-- BROWSER SERVER -->
+        <section>
+          <h2>What browsers and servers actually do</h2>
+          <ul>
+            <li>
+              Browsers send HTTP requests, receive responses,
+              and render HTML, CSS, and JavaScript.
+            </li>
+            <li>
+              Servers store files, run server-side code,
+              and respond to incoming requests.
+            </li>
+          </ul>
+          <p>
+            The browser is the interface.
+            The server is the decision-maker.
+          </p>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section>
+          <h2>Web system architecture (three-tier model)</h2>
+          <ul>
+            <li>
+              <strong>Presentation layer:</strong> the browser (UI/UX)
+            </li>
+            <li>
+              <strong>Application layer:</strong> server-side logic
+            </li>
+            <li>
+              <strong>Data layer:</strong> databases
+            </li>
+          </ul>
+          <p>
+            Separating these layers improves scalability, security,
+            and maintainability.
+          </p>
+        </section>
+
+        <!-- URL DNS -->
+        <section>
+          <h2>URLs, domains, and DNS</h2>
+          <p>
+            Humans use names. Computers use numbers.
+          </p>
+          <ul>
+            <li>
+              A <strong>URL</strong> is a full address to a resource.
+            </li>
+            <li>
+              A <strong>domain name</strong> is a human-friendly alias for an IP.
+            </li>
+            <li>
+              <strong>DNS</strong> translates domain names into IP addresses.
+            </li>
+          </ul>
+        </section>
+
+        <!-- CLIENT VS SERVER SCRIPT -->
+        <section>
+          <h2>Client-side vs server-side scripting</h2>
+          <ul>
+            <li>
+              Client-side scripting (JavaScript) runs in the browser
+              and handles interactivity.
+            </li>
+            <li>
+              Server-side scripting runs on the server and handles
+              authentication, data access, and personalization.
+            </li>
+          </ul>
+          <p>
+            Static sites show the same content to everyone.
+            Dynamic sites customize responses per request.
+          </p>
+        </section>
+
+        <!-- WHAT CLICKED -->
+        <section>
+          <h2>What finally clicked for me</h2>
+          <ul>
+            <li>The web is layered, not magical</li>
+            <li>Everything is request–response</li>
+            <li>Browsers and servers have very different roles</li>
+          </ul>
+        </section>
+
+        <!-- GAPS -->
+        <section>
+          <h2>What I still want to go deeper into</h2>
+          <ul>
+            <li>Caching strategies</li>
+            <li>CDNs and load balancing</li>
+            <li>Security beyond HTTPS</li>
+          </ul>
+        </section>
+
+        <!-- NAV -->
+        <nav class="note-nav">
+          <a href="/learning-paths">← Learning Paths</a>
+          <a href="/learning-paths/notes/html-css">HTML-CSS →</a>
+        </nav>
+
+      </article>
+    </main>
+
+    <Footer />
+  </body>
+</html>

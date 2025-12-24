@@ -1,0 +1,168 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Git & GitHub — Learning Notes"
+      description="My learning notes while understanding Git and GitHub."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+        <article>
+            <h1>Git & GitHub</h1>
+
+            <p class="status comfortable">
+                Status: Comfortable
+            </p>
+
+            <p class="note-disclaimer">
+                These are my personal learning notes. They reflect how I currently
+                understand Git and GitHub and may evolve as I use them more.
+            </p>
+
+            <!-- WHY -->
+            <section>
+                <h2>Why I learned Git</h2>
+                <p>
+                I reached a point where manual versioning (<code>final.js</code>,
+                <code>final_v2.js</code>) became unmanageable.
+                Git wasn’t optional anymore — it was the only sane way to track changes,
+                undo mistakes, and collaborate.
+                </p>
+            </section>
+
+            <!-- CORE CONCEPT -->
+            <section>
+                <h2>The core idea that matters</h2>
+                <p>
+                Git is a <strong>local version control system</strong>.
+                GitHub is a <strong>remote hosting service</strong>.
+                </p>
+                <ul>
+                <li>Git tracks changes and history on my machine</li>
+                <li>GitHub stores and shares that history online</li>
+                <li>You can use Git without GitHub, but not the other way around</li>
+                </ul>
+            </section>
+
+            <!-- MENTAL MODEL -->
+            <section>
+                <h2>The mental model that clicked</h2>
+                <ul>
+                <li><strong>Working Directory</strong> → where I edit files</li>
+                <li><strong>Staging Area</strong> → what I choose to save</li>
+                <li><strong>Repository</strong> → permanent history</li>
+                </ul>
+                <p>
+                Understanding this made commands like <code>add</code> and
+                <code>commit</code> feel logical instead of magical.
+                </p>
+            </section>
+
+            <!-- DAILY WORKFLOW -->
+            <section>
+                <h2>The workflow I actually use</h2>
+                <pre><code>git status
+            git add .
+            git commit -m "Clear, specific message"
+            git push</code></pre>
+
+                <ul>
+                <li><code>git status</code> is my most-used command</li>
+                <li>I commit small, logical changes</li>
+                <li>I push frequently to avoid losing work</li>
+                </ul>
+            </section>
+
+            <!-- BRANCHING -->
+            <section>
+                <h2>Branching (how I think about it)</h2>
+                <p>
+                Branches are parallel timelines.
+                I use them to experiment without risking the main codebase.
+                </p>
+                <pre><code>git checkout -b feature-name
+            git checkout main
+            git merge feature-name</code></pre>
+                <p>
+                I keep branches short-lived and delete them after merging.
+                </p>
+            </section>
+
+            <!-- GITHUB -->
+            <section>
+                <h2>How GitHub fits in</h2>
+                <ul>
+                <li>Acts as a backup for my repositories</li>
+                <li>Makes collaboration possible</li>
+                <li>Provides visibility into my work history</li>
+                </ul>
+                <p>
+                For now, I mainly use GitHub as a remote and for sharing projects.
+                </p>
+            </section>
+
+            <!-- GOOD PRACTICES -->
+            <section>
+                <h2>Practices I try to follow</h2>
+                <ul>
+                <li>Meaningful commit messages</li>
+                <li>Using <code>.gitignore</code> correctly</li>
+                <li>Not committing secrets or generated files</li>
+                <li>Keeping commit history readable</li>
+                </ul>
+            </section>
+
+            <!-- MISTAKES -->
+            <section>
+                <h2>Mistakes I made while learning</h2>
+                <ul>
+                <li>Committing too much in one commit</li>
+                <li>Pushing without checking <code>git status</code></li>
+                <li>Fear of branches initially</li>
+                <li>Not understanding merge conflicts early</li>
+                </ul>
+            </section>
+
+            <!-- WHAT I DON'T KNOW YET -->
+            <section>
+                <h2>What I haven’t gone deep into yet</h2>
+                <ul>
+                <li>Rebasing vs merging in complex scenarios</li>
+                <li>Advanced conflict resolution</li>
+                <li>Git hooks and automation</li>
+                <li>Large-team workflows</li>
+                </ul>
+            </section>
+
+            <!-- NEXT -->
+            <section>
+                <h2>How I’ll deepen this later</h2>
+                <ul>
+                <li>Use Git daily in real projects</li>
+                <li>Handle real merge conflicts</li>
+                <li>Review old commits critically</li>
+                </ul>
+            </section>
+
+            <!-- NAV -->
+            <nav class="note-nav">
+                <a href="/learning-paths/notes/javascript">← JavaScript</a>
+                <span class="disabled"> →</span>
+            </nav>
+        </article>
+
+    </main>
+
+    <Footer />
+  </body>
+</html>

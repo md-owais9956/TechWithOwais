@@ -1,76 +1,91 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-    
-		<BaseHead title={`About - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-            <div class="about-content">
-                <img src= "/profile.jpg" alt="A photo of Owais" class="profile-pic"/>
+  <head>
+    <BaseHead
+      title="About — Owais"
+      description="A little bit about me, my journey into tech, and why this site exists."
+    />
+  </head>
 
-                <h1>A Little Bit About Me</h1>
-                <p class="intro">
-                Hello there! I'm Owais, a computer science student based in India, with a huge passion for building things with code.
-                </p>
+  <body>
+    <Header />
 
-                <h2>My Journey into Tech</h2>
-                <p>
-                Like many others, my journey started with a simple "Hello, World!" program. But from that moment, I was hooked. The ability to create something functional and useful out of nothing but logic and keystrokes felt like a superpower. I spend my days juggling university lectures and assignments, but my nights are often spent exploring new technologies, debugging a stubborn piece of code, or sketching out my next project idea.
-                </p>
+    <main>
+      <article class="about-page">
+        <header>
+          <h1>A Little Bit About Me</h1>
+          <p>
+            Hello, I’m Owais — a computer science student based in India.
+            I enjoy understanding how things work and building software
+            one layer at a time.
+          </p>
+        </header>
 
-                <h2>Why This Blog Exists</h2>
-                <p>
-                I created this blog as a way to "learn in public." It serves as my personal knowledge base, a portfolio of my work, and a platform to connect with like-minded people. My goal is to break down complex topics into simple terms and to document the real, unfiltered process of building software—including all the mistakes and lessons along the way.
-                </p>
+        <section>
+          <h2>My Journey into Tech</h2>
+          <p>
+            Like most people, my journey started with a simple
+            <em>"Hello, World"</em>.
+            But what kept me going wasn’t just writing code —
+            it was realizing that software is logic made visible.
+          </p>
+          <p>
+            I currently balance university coursework with self-driven learning.
+            Most of my progress happens through experimenting, breaking things,
+            debugging late at night, and slowly refining how I think about systems.
+          </p>
+        </section>
 
-                <h2>Let's Connect</h2>
-                <p>
-                I'm always open to discussing tech, new ideas, or just connecting with fellow developers. Feel free to reach out!
-                </p>
-            </div>
-		</main>
-		<Footer />
-	</body>
+        <section>
+          <h2>Why This Site Exists</h2>
+          <p>
+            This website exists as a <strong>learn-in-public notebook</strong>.
+            It’s not a polished tutorial platform.
+            It’s a record of how my understanding evolves over time.
+          </p>
+          <p>
+            Instead of waiting until I “master” something, I write while learning.
+            That includes confusion, revisions, and course corrections.
+          </p>
+        </section>
+
+        <section>
+          <h2>How to Use This Site</h2>
+          <ul>
+            <li>Learning Paths show the order I’m learning topics</li>
+            <li>Notes reflect my current understanding, not perfection</li>
+            <li>Some content is marked <em>in progress</em> and will change</li>
+            <li>If something feels rough, it probably means I’m still learning it</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What I’m Focused On Right Now</h2>
+          <ul>
+            <li>Web fundamentals (HTML, CSS, JavaScript)</li>
+            <li>Understanding JavaScript beyond syntax</li>
+            <li>Building small but real projects</li>
+            <li>Using Git as a thinking and tracking tool</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Let’s Connect</h2>
+          <p>
+            I’m always open to discussing ideas, learning approaches,
+            or just connecting with other developers who enjoy building
+            things thoughtfully.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <Footer />
+  </body>
 </html>
-
-<style>
-    main {
-        margin: auto;
-        padding: 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
-        /* color: white; */
-        font-size: 20px;
-        line-height: 1.6;
-    }
-    .about-content {
-      max-width: 750px;
-      margin: 0 auto;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 2rem auto;
-    }
-    .intro {
-      font-size: 1.25rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-</style>
