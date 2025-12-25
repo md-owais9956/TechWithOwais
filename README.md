@@ -5,7 +5,7 @@ This repository contains the source code for my personal blog and learning journ
 > **Check out the live site:** [**techwithowais.co.in**](https://techwithowais.co.in/)
 
 
-![Screenshot of the TechWithOwais homepage](screenshot.png)
+![Screenshot of the TechWithOwais homepage](screenshot01.png)
 
 
 
