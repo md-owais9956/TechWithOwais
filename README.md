@@ -9,15 +9,6 @@ This repository contains the source code for my personal blog and learning journ
 
 
 
-This site is not a polished tutorial platform or a course series.  
-It’s a **public notebook** where I record:
-- things that finally made sense to me
-- small experiments and projects
-- reflections on technology
-- mental models that helped me understand how the web works
-
-Everything here is a snapshot of what I understood *at the moment I wrote it*.  
-Older notes may be incomplete, evolving, or were written before I fully understood something.
 
 ## What This Repo Contains
 
