@@ -1,21 +1,21 @@
 ---
-// src/pages/techLessons/[...slug].astro
+// src/pages/DSAjourney/[...slug].astro
 
 // 1. Import the new layout
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import TechLessonLayout from '../../layouts/TechLessonLayout.astro';
 
-// 2. Change getCollection to 'techLessons'
+// 2. Change getCollection to 'DSAjourney'
 export async function getStaticPaths() {
-    const posts = await getCollection('techLessons');
+    const posts = await getCollection('DSAjourney');
     return posts.map((post) => ({
         params: { slug: post.slug }, // Use post.slug to match the links
         props: post,
     }));
 }
 
-// 3. Change the type to 'techLessons'
-type Props = CollectionEntry<'techLessons'>;
+// 3. Change the type to 'DSAjourney'
+type Props = CollectionEntry<'DSAjourney'>;
 
 const post = Astro.props;
 const { Content } = await render(post);

@@ -93,7 +93,7 @@ This way, I’m not just learning what’s in the syllabus — I’m using it as
 
 Along the way, I’m also starting a **Teaching Corner** — a space where I’ll share tutorials, projects, and step-by-step explanations for anyone learning web development.  
 
-You can check it out here: [TechLessons – Web Development Corner](/techLessons)  
+You can check it out here: [DSAjourney – Web Development Corner](/DSAjourney)  
 
 This way, I’m not only learning but also teaching — because explaining a concept is the best way to truly master it.
 

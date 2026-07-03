@@ -108,5 +108,5 @@ The lights are glowing.
 And the web is finally alive.
 You can check it out here:
 
-You can check it out here: [TechLessons – Web Development Corner](/techLessons)  
+You can check it out here: [DSAjourney – Web Development Corner](/DSAjourney)  
 

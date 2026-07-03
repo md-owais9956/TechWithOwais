@@ -1,9 +1,9 @@
 <!-- ---
 import { getCollection } from 'astro:content';
-const learnPosts = await getCollection('techLessons');
+const learnPosts = await getCollection('DSAjourney');
 
 // Filter by category
-const webDevLessons = learnPosts.filter((p) => p.data.category === 'techLessons');
+const webDevLessons = learnPosts.filter((p) => p.data.category === 'DSAjourney');
 // const dsaLessons = learnPosts.filter((p) => p.data.category === 'DSA');
 ---
 
@@ -18,7 +18,7 @@ const webDevLessons = learnPosts.filter((p) => p.data.category === 'techLessons'
   <ul class="space-y-3 mb-10">
     {webDevLessons.map((lesson) => (
       <li class="border-b border-gray-200 pb-3">
-        <a href={`/techLessons/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
+        <a href={`/DSAjourney/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
           {lesson.data.title}
         </a>
         <p class="text-gray-500 text-sm">{lesson.data.description}</p>
@@ -46,7 +46,7 @@ const webDevLessons = learnPosts.filter((p) => p.data.category === 'techLessons'
 
 
 ---
-// src/pages/techLessons.astro
+// src/pages/DSAjourney.astro
 
 // 1. Import your layout components
 import BaseHead from '../components/BaseHead.astro';
@@ -55,7 +55,7 @@ import Footer from '../components/Footer.astro';
 
 // 2. Your existing logic to get collections
 import { getCollection } from 'astro:content';
-const learnPosts = await getCollection('techLessons');
+const learnPosts = await getCollection('DSAjourney');
 
 // 3. Filter for just web dev
 const webDevLessons = learnPosts.filter((p) => p.data.category === 'webdev');
@@ -82,7 +82,7 @@ const webDevLessons = learnPosts.filter((p) => p.data.category === 'webdev');
     
     {webDevLessons.map((lesson) => (
       <li class="border-b border-gray-200 pb-3">
-        <a href={`/techLessons/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
+        <a href={`/DSAjourney/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
           {lesson.data.title}
         </a>
         

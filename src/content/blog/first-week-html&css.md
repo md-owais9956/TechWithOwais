@@ -42,7 +42,7 @@ This week, I sat down and *finally* learned the **Box Model**. *Properly*.
 
 Understanding that every element is a box with content, padding, border, and margin... it clicked. And discovering `box-sizing: border-box;`? That one line of code feels like a secret I’ve been kept from. The fact that I can set a `width: 200px` and know it will *be* 200px, *including* its padding and border, is revolutionary for me. No more weird math just to get two boxes to sit side-by-side.
 
-To prove this to myself, I did something simple: I rebuilt one of the "post cards" for my *TechLessons* site. The old one was a `div` with three more `div`s inside. The new one? A clean `<article>`, with an `<img>` in the header, an `<h2>` for the title, a `<p>` for the summary, and a `<footer>` for the "Read More" link. The CSS was half the length. It just... *worked*.
+To prove this to myself, I did something simple: I rebuilt one of the "post cards" for my *DSAjourney* site. The old one was a `div` with three more `div`s inside. The new one? A clean `<article>`, with an `<img>` in the header, an `<h2>` for the title, a `<p>` for the summary, and a `<footer>` for the "Read More" link. The CSS was half the length. It just... *worked*.
 
 ---
 
@@ -58,4 +58,4 @@ It’s time to add the electricity. But it's more than that. When I look ahead a
 
 This week wasn't just about Unit 2. It was the key to unlocking the entire rest of the semester.
 
-You can check it out here: [TechLessons – Web Development Corner](/techLessons)  
+You can check it out here: [DSAjourney – Web Development Corner](/DSAjourney)  

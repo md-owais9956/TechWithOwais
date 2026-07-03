@@ -37,8 +37,8 @@ const blogCollection = defineCollection({
 });
 
 // 2. --- THIS IS THE MISSING PIECE ---
-// Define your new techLessons collection
-const techLessonsCollection = defineCollection({
+// Define your new DSAjourney collection
+const DSAjourneyCollection = defineCollection({
   type: 'content',
   schema: ({ image }) =>
     z.object({
@@ -58,5 +58,5 @@ const techLessonsCollection = defineCollection({
 // You MUST export BOTH collections here.
 export const collections = {
   'blog': blogCollection,
-  'techLessons': techLessonsCollection, // <-- This finally adds your collection
+  'DSAjourney': DSAjourneyCollection, // <-- This finally adds your collection
 };
