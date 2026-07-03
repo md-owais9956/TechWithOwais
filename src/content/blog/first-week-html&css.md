@@ -58,4 +58,3 @@ It’s time to add the electricity. But it's more than that. When I look ahead a
 
 This week wasn't just about Unit 2. It was the key to unlocking the entire rest of the semester.
 
-You can check it out here: [DSAjourney – Web Development Corner](/DSAjourney)  

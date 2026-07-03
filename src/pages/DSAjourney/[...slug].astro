@@ -3,7 +3,7 @@
 
 // 1. Import the new layout
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-import TechLessonLayout from '../../layouts/TechLessonLayout.astro';
+import DSAjourneyLayout from '../../layouts/DSAjourneyLayout.astro';
 
 // 2. Change getCollection to 'DSAjourney'
 export async function getStaticPaths() {
@@ -21,6 +21,6 @@ const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<TechLessonLayout {...post.data}>
+<DSAjourneyLayout {...post.data}>
     <Content />
-</TechLessonLayout>
+</DSAjourneyLayout>

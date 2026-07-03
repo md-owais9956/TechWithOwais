@@ -57,14 +57,14 @@ import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 const learnPosts = await getCollection('DSAjourney');
 
-// 3. Filter for just web dev
-const webDevLessons = learnPosts.filter((p) => p.data.category === 'webdev');
+// 3. Filter for just dsa
+const dsaLessons = learnPosts.filter((p) => p.data.category === 'dsa');
 ---
 
 <html lang="en">
 <head>
   
-  <BaseHead title="Tech Lessons" description="Learn Web Development with Owais." />
+  <BaseHead title="DSA Journey" description="Join My DSA journey." />
 </head>
 <body>
   <Header />
@@ -73,14 +73,14 @@ const webDevLessons = learnPosts.filter((p) => p.data.category === 'webdev');
     <section class="max-w-4xl mx-auto px-4 py-8">
       <h1 class="text-4xl font-bold mb-6 text-center"> Tech with Owais</h1>
       <p class="text-lg text-gray-600 text-center mb-12">
-        Step-by-step tutorials on <strong>Web Development</strong> – all written in an easy, practical way with Example.
+        My <strong>DSA</strong> journey.
       </p>
 
       <div>
-  <h2 class="text-2xl font-semibold mb-4 text-blue-700"> Web Development</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-blue-700"> DSA with cpp</h2>
   <ul class="space-y-3 mb-10">
     
-    {webDevLessons.map((lesson) => (
+    {dsaLessons.map((lesson) => (
       <li class="border-b border-gray-200 pb-3">
         <a href={`/DSAjourney/${lesson.slug}/`} class="text-lg text-blue-600 hover:underline">
           {lesson.data.title}

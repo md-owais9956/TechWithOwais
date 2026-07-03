@@ -106,7 +106,3 @@ For now, the switch is on.
 The lights are glowing.
 
 And the web is finally alive.
-You can check it out here:
-
-You can check it out here: [DSAjourney – Web Development Corner](/DSAjourney)  
-

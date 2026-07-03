@@ -1,9 +1,9 @@
 ---
 title: "DSA MODE: ON"
-description: " My Quiet Phase, DSA Journey & What’s Next"
-pubDate: "2026-01-11"
+description: "My Quiet Phase, Dsa Journey & what's Next"
+pubDate: "2026-7-3"
+heroImage: "../../assets/dsaOn.png"
 ---
-
 
 # My Quiet Phase, DSA Journey & What’s Next
 
@@ -114,7 +114,7 @@ Now that I’ve built a routine, I’m coming back —
 **not as a teacher**  
 but as a learner documenting his path.
 
-On this site on my **Learning Path** page, I’ll share:
+On this site on my [DSA Journey](/DSAjourney) page, I’ll share:
 
 - What I’m currently studying  
 - Problems I’m stuck on  
@@ -130,23 +130,7 @@ Just real progress.
 
 ---
 
-## Learning in Public
 
-This website is my digital notebook.
-
-A place to:
-
-- Track my journey  
-- Stay accountable  
-- Look back after months  
-- See how far I’ve come  
-
-If someone relates — great.  
-If not — that’s okay too.  
-
-This is mainly for me.
-
----
 
 ## Final Thoughts
 
