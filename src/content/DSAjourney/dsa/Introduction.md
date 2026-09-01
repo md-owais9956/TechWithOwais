@@ -2,7 +2,7 @@
 layout: ../../../layouts/DSAjourneyLayout.astro
 title: "INTRODUCTION"
 description: "The Prequel."
-pubDate: "2026-7-3"
+pubDate: "2026-9-1"
 category: "dsa"
 level: "intro"
 # updatedDate: "2025-10-27"         
