@@ -72,4 +72,4 @@ Let's see where it takes me.
 
 Here Is my [leetcode](https://leetcode.com/u/md_owais_/) account.
 
-I am also posting my DSA progress on  [linkedIn](https://www.linkedin.com/in/mohammad-owais-45a1a0324/) account.
+I am also posting my DSA progress on  [linkedIn](https://www.linkedin.com/in/mohd-owais-45a1a0324/) account.

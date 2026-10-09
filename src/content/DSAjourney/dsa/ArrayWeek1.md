@@ -70,6 +70,6 @@ One topic at a time. One problem at a time.
 
 ---
 
-**LeetCode:** [md_owais](https://leetcode.com/u/md_owais/)
+**LeetCode:** [md_owais_](https://leetcode.com/u/md_owais_/)
 
 I'm also sharing my DSA progress on **LinkedIn**.

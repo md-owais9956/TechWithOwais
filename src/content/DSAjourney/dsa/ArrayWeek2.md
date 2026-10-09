@@ -82,7 +82,7 @@ This routine helps me stay connected with DSA, encounter different types of prob
 
 You can follow my journey here:
 
-- **LeetCode:** [md_owais](https://leetcode.com/u/md_owais/) — solving problems and practising daily.
+- **LeetCode:** [md_owais_](https://leetcode.com/u/md_owais_/) — solving problems and practising daily.
 - **LinkedIn:** [Mohd Owais](https://www.linkedin.com/in/mohd-owais-45a1a0324) — sharing my daily POTD progress and DSA learnings.
 
 For me, the goal is not simply to maintain a streak. It's to understand the logic, learn from mistakes, and become more comfortable approaching unfamiliar problems.
@@ -111,5 +111,5 @@ I may not always be able to document every step of the journey, but that doesn't
 
 **The posts might pause, the pace might slow down, but the learning continues.**
 
-- **LeetCode:** [md_owais](https://leetcode.com/u/md_owais/)
+- **LeetCode:** [md_owais_](https://leetcode.com/u/md_owais_/)
 - **LinkedIn:** [Mohd Owais — Daily DSA POTD](https://www.linkedin.com/in/mohd-owais-45a1a0324)
